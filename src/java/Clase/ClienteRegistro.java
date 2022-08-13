@@ -6,8 +6,61 @@ package Clase;
 
 /**
  *
- * @author GERARDO SAMAYOA
+ * @author Elvin Esquivel
  */
 public class ClienteRegistro {
+    
+    
+ClienteController[] tabla;
+    int indicearay;
+    
+    
+    public ClienteRegistro ()
+    {
+        this.tabla=new ClienteController[100];
+        
+        this.indicearay=0;
+    
+    
+    
+    
+    
+    }
+    
+    
+    public void guardarregistro (ClienteController Registro){
+    
+    this.tabla[this.indicearay]=Registro;
+    
+    this.indicearay=this.indicearay+1;
+    
+    
+    
+    
+    }
+    
+    public ClienteController []getClienteController(){
+    
+    return this.tabla;
+    
+    
+    
+    
+    }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
